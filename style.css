@@ -1,6 +1,6 @@
 body{
   background-color: #F6F6F6;
-  font-family:"Rubik";
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
 }
 /* Header */
@@ -15,8 +15,6 @@ body{
 .header_inner{
   display: flex;
   justify-content: space-around;
-
-
 }
 /*Logo*/
 .img{
@@ -41,18 +39,26 @@ body{
   top: 58.62px;
 }
 /*Sing in*/
-.sign{
-  margin-left: 110px;
-  width: 53px;
-  height: 19px;
-  top: 58.62px;
+.header_innersignup{
+  width: 233px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  margin-right: -1400px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
 }
-.bottom{
-  position: absolute;
+.botton{
+  color: #F53855;
+  border: 1px solid #F53855;
+  border-radius: 50px;
   width: 150px;
   height: 45px;
-  left: 1270px;
-  top: 45.62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .conrainer_picture{
   position: absolute;
@@ -86,57 +92,59 @@ body{
   line-height: 30px;
 }
 .intro__bottom{
-  margin-left: 110px;
+  margin-left: 150px;
+  background-color: #F53838;
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
 }
 .slide{
+  display: flex;
+  justify-content: space-between;
   background-color:#ffffff;
   border-radius: 10px;
-  margin:0 auto;
-  margin-top: 450px;
+  margin-left: 150px;
+  margin-top: 480px;
   width:1140px;
   height:200px;
 }
-.numbers{
+.slide_item{
   display: flex;
-  justify-content: space-between;
-  padding: 67px 170px;
+  align-items: center;
+  justify-content: center;
+  width: 365px;
+  height: 125px;
+  margin-top: 40px;
+  border-right: 2px solid #EEEFF2;
 }
-.numbers_inner{
-  font-family:"Rubik";
+.slide_item:last-child{
+  border-right: 0px;
+}
+.slide_img {
+  width: 55px;
+  height: 55px;
+}
+.slide_text{
+  padding: 36px;
+}
+.slide_text_1 {
   font-size: 25px;
   font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 0px;
 }
-.words{
-  display: flex;
-  justify-content: space-between;
-  margin-top: -60px;
-  margin-right: 150px;
-  margin-left: 170px;
-}
-.words_inner{
-
-  color:#4F5665;
+.slide_text_2{
   font-size: 20px;
   font-weight: 400;
-}
-/* vertical lines*/
-.border{
-  display: flex;
-  justify-content:space-evenly;
-}
-.vertical_line{
-  width:2px;
-  background-color: #EEEFF2;
-  height:125px;
-  margin-top: -80px;
-}
-.slide_pictures{
-  display:flex;
-  justify-content: space-around;
-}
-.slide_pictures_num{
-  margin-top: -105px;
-  margin-left: -140px;
+  line-height: 30px;
+  color: #4F5665;
 }
 /*Section*/
 section{
@@ -160,7 +168,7 @@ section{
 }
 .section_suptitle{
   font-weight: 500;
-  width: 350px;
+  width: 383px;
   font-size: 35px;
   line-height: 50px;
 }
@@ -192,7 +200,7 @@ section{
 }
 .section_menu_text_num{
   margin-top: 20px;
-  width: 179px;
+  width: 190px;
   font-size: 14px;
   color:#4F5665;
   font-weight: 400;
@@ -237,7 +245,6 @@ footer{
   background-color:#ffffff;
   border-radius: 10px;
   border:2px solid #DDDDDD;
-  box-sizing: border-box;
 }
 .block_image{
   margin: 80px 90px;
@@ -268,7 +275,7 @@ footer{
 }
 .block_menu_text{
   height: 190px;
-  width: 136px;
+  width: 150px;
   margin-top: -14px;
 }
 .block_menu_text_num{
@@ -281,15 +288,45 @@ footer{
 .block_undertitle{
   margin-top: 110px;
   text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #4F5665;
+}
+.block_undertitle_value{
   font-weight: 500;
   font-size: 25px;
-  color:#0B132A;
+  line-height: 30px;
+  color: #0B132A;
 }
 .select_pic{
-  margin: 10px 75px ;
+  border:1px solid #F53838;
+  border-radius: 50px;
+  color: #F53838;
+  background-color: #ffffff;
+  width: 177px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 76px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
 }
 .select_pic2{
-  margin: -25px 47px;
+  border-radius: 50px;
+  background-color: #F53838;
+  color: #ffffff;
+  width: 177px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 76px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
 }
 /*main*/
 main{
@@ -306,14 +343,14 @@ main{
 }
 .main_suptitle{
   margin:0 auto;
-  max-width: 348px;
+  width: 447px;
   font-size: 35px;
   font-weight: 500;
   line-height: 50px;
 }
 .main_title{
   margin-left: 30px;
-  width: 500px;
+  width: 555px;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -330,8 +367,8 @@ main{
 .footer_reviews{
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-left: 150px;
+  margin-top: 80px;
+  margin-left: 91px;
 }
 .footer_reviews_num{
   height: 230px;
@@ -350,14 +387,15 @@ main{
   margin-bottom: -50px;
 }
 .footer_reviews_person img{
-  margin-left: 30px;
+  margin-left: 20px;
 }
-footer_reviews_personinfo{
-  width: 112px;
+.footer_reviews_personinfo{
+  width: 120px;
   height: 40px;
   text-align: left;
 }
 .footer_reviews_personinfo_text1{
+  width: 143px;
   font-size: 18px;
   font-weight: 600;
   line-height: 30px;
@@ -365,6 +403,7 @@ footer_reviews_personinfo{
   margin-bottom: 0px;
 }
 .footer_reviews_personinfo_text2{
+  width: 143px;
   color:#4F5665;
   font-size: 14px;
   font-weight: 400;
@@ -374,7 +413,7 @@ footer_reviews_personinfo{
 .footer_reviews_person{
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 210px;
   height: 50px;
   margin-top: -40px;
 }
@@ -401,12 +440,13 @@ footer_reviews_personinfo{
 .reviews_footer{
   display: flex;
   justify-content: space-between;
-
+  margin-top: 30px;
+  margin-bottom: -40px;
 }
 .footer_left{
   width: 135px;
   height: 15px;
-  margin: 82.5px 150px;
+  margin: 82.5px 91px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -440,7 +480,9 @@ footer_reviews_personinfo{
   width: 1140px;
   height: 230px;
   background-color: #ffffff;
-  margin: 20px 150px;
+  margin: 0 auto;
+  margin-left: 150px;
+  border-radius: 10px;
 }
 .footer_site_text{
   width: 370px;
